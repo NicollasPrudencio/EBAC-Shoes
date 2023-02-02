@@ -124,6 +124,91 @@ header ul {
     margin-left: 22px;
 }
 
+@media screen and (min-width: 375px){
+    header{
+        height: 150px;
+        width: 100%;
+    }
+
+    header .header{
+        display: block;
+        height: 100%;
+        margin: auto;
+    }
+    header .header h1{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    header .header nav{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .header nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    header .header nav ul li{
+        height: 20px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .container-conteudo main,
+    .container-conteudo .produtos .container{
+        max-width: 350px;
+    }
+
+    .conteudo-sobre-a-loja{
+        margin: auto;
+    }
+
+    .conteudo-sobre-a-loja img{
+        height: 200px;
+        width: 100%;
+    }
+    .conteudo-sobre-a-loja .texto h2{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .container-conteudo .produtos h2{
+        text-align: center;
+    }
+
+    .container-conteudo .produtos .container{
+        max-width: 300px;
+        display: block;
+        margin-left: 30px;
+    }
+
+    .container-conteudo .produtos .produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-conteudo .produtos .produto h3,
+    .container-conteudo .produtos .produto p{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container-conteudo .produtos .produto button{
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
 @media screen and (max-width: 767px){
 
     header .header{
@@ -159,20 +244,31 @@ header ul {
     header .header{
         width: 900px;
     }
-    .container-conteudo{
-        
+    .conteudo-sobre-a-loja{
+        display: flex;
+        width: 100%;
+        max-width: 1023px;
+        margin-right: none;
+    }
+
+    .conteudo-sobre-a-loja .texto{
+        width: 500px;
+    }
+    .conteudo-sobre-a-loja p{
+        width: 472px;
+        max-width: 472px;
     }
 
     .sobre-a-loja{
         width: 900px;
-        justify-content: center;
+        margin-left: 40px;
     }
     .sobre-a-loja img{
         margin-left: 20px;
     }
 
-    .sobre-a-loja .texto{
-        width: 100%;
+    .produtos .produto{
+        margin-left: 10px;
     }
 
     .produtos h2{
@@ -182,9 +278,30 @@ header ul {
     .produtos .container{
         width: 980px;
         display: flex;
+
         margin-left: 20px;
     }
     .produtos .produto{
-    margin-left: 0;
+        width: 230px;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .produto h3,
+    .produto p{
+        text-align: center;
+    }
+    .produto button{
+        margin-left: 0;
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    .conteudo-sobre-a-loja{
+        display: flex;
     }
 }
